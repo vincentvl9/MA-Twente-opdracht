@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Class:    4A7B
+  Name:     V. van Lier
+  Purpose:  MA Twente
+
+  dd-mm-yyyy  Description
+  ==========  ==========================================
+  13-06-2018  Front-end
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="css/mat.css">
+	
+    <title>MA Twente</title>
+  </head> 
+
+  <body>
+
+    <img id="wolken" src="img/mat_wolken.png"> <p id="head">Systeem MA Twente</p> <img id="logo" src="img/mat_logo.png">
+	
+	<br><nav class="menubar"><a href="start.html"><button class="home">🏠</button></a><button class="mwbutton" onclick="openFormOne(this.id)">Medewerker</button> <button class="configbutton" onclick="openFormTwo(this.id)">Configuratie</button> <button class="configbutton" onclick="openMenu(this.id)">Systeemtabel</button>  <p class="gebruiker"><b>Gebruiker</b></p></nav>
+	
+	
+	<div id="subMenu">
+	  <br><button class="submenu" onclick="openFormThree()">Afdeling</button>
+	  <br><button class="submenu" onclick="openFormThree()">Hardware</button>
+	  <br><button class="submenu" onclick="openFormThree()">OS Typen</button>
+	  <br><button class="submenu" onclick="openFormThree()">CPU Typen</button>
+	  <br><button class="submenu" onclick="openFormThree()">Video card</button>
+	</div>
+	
+	<div id="inputbox_01">
+	  <h1>Medewerker</h1>
+	  <div class="inputask">Geslacht			</div><div class="input"></div>
+	  <div class="inputask">Voorletter			</div><div class="input"></div>
+	  <div class="inputask">Achternaam			</div><div class="input"></div>
+	  <div class="inputask">Telefoonnummer		</div><div class="input"></div>
+	  <div class="inputask">Afdeling			</div><div class="input"></div>
+	  <div class="inputask">Email				</div><div class="input"></div>
+	  <div class="inputask">Wachtwoord			</div><div class="input"></div>
+	  <br><button class="buttonform">new   </button>
+	      <button class="buttonform">save  </button>
+	      <button class="buttonform">delete</button>
+	      <button class="buttonform">find  </button>
+	</div>
+	
+	<div id="inputbox_02">
+	  <h1>Configuratie</h1>
+	  <div class="inputask">PC Nummer			</div><div class="input"></div>
+	  <div class="inputask">Gebruiker			</div><div class="input"></div>
+	  <div class="inputask">Aanschaf datum		</div><div class="input"></div>
+	  <div class="inputask">Soort				</div><div class="input"></div>
+	  <div class="inputask">CPU					</div><div class="input"></div>
+	  <div class="inputask">Memory				</div><div class="input"></div>
+	  <div class="inputask">Harddisk			</div><div class="input"></div>
+	  <div class="inputask">OS					</div><div class="input"></div>
+	  <div class="inputask">Video Card			</div><div class="input"></div>
+	  <br><button class="buttonform">new   </button>
+	      <button class="buttonform">save  </button>
+	      <button class="buttonform">delete</button>
+	      <button class="buttonform">find  </button>
+	</div>
+	
+	<div id="inputbox_03">
+	  <h1>Systeem</h1>
+	  <div class="inputask">Afkorting			</div><div class="input"></div>
+	  <div class="inputask">Omschrijving		</div><div class="input"></div>
+	  <br><button class="buttonform">new   </button>
+	      <button class="buttonform">save  </button>
+	      <button class="buttonform">delete</button>
+	      <button class="buttonform">find  </button>
+	</div>
+	
+	<footer>©Copyright 2004-2018 MA Twente. Alle rechten voorbehouden.</footer>
+
+	
+  </body>
+  <script>
+    var isDropped = false;
+	
+	
+	function closeAll() {
+	
+	  document.getElementById("inputbox_01").style.display = "none";
+	  document.getElementById("inputbox_02").style.display = "none";
+	  document.getElementById("inputbox_03").style.display = "none";
+	}
+	
+	function openFormOne() {
+	  closeAll();
+	  
+	  document.getElementById("subMenu").style.display = "none";
+	  document.getElementById("inputbox_01").style.display = "block";
+	
+	}
+	
+	function openFormTwo() {
+	  closeAll();
+	  
+	  
+	  document.getElementById("subMenu").style.display = "none";
+	  document.getElementById("inputbox_02").style.display = "block";
+	
+	}
+	
+	function openMenu() {
+	
+	isDropped = !isDropped;
+	  
+	    if (isDropped == false) document.getElementById("subMenu").style.display = "none";
+		else 					document.getElementById("subMenu").style.display = "block";
+		                        closeAll();
+	}
+	
+	
+	
+	
+	function openFormThree() {
+	  closeAll();
+	  
+	  document.getElementById("subMenu").style.display     = "none";
+	  document.getElementById("inputbox_03").style.display = "block";	
+	
+	}
+	</script>
+</html>

@@ -1,0 +1,307 @@
+/*
+  Class:    4A7B
+  Name:     Vincent
+  Purpose:  MA Twente
+  
+  mm-dd-yyyy  Description
+  ----------  -----------------------------
+  13-06-2018  Front-end
+			  Namechange -> mat.css
+*/
+
+/************************************************
+ *Include the padding and border to all elements*
+ ************************************************/
+* {
+  box-sizing: border-box;
+}
+/************************
+ *Default setting       *
+ ************************/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  font-size: 100%;
+  font-family: 'Calibri', 'Arial', 'Helvetica';
+  color: black;
+  background-color: #66a4dd;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white; 
+}
+
+/************************
+ *header		        *
+ ************************/
+ 
+#wolken {
+  position: relative;
+  width: 100%;
+  height: 150px;
+ }
+ 
+#logo { 
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 150px;
+}
+ 
+#head {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/************************
+ *navigation	        *
+ ************************/
+ 
+.menubar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-left: 0px;
+  margin-top: -5px;
+  background-color: black;
+}  
+
+.login {
+  position: absolute;
+  background-color: #ff0000;
+  color: white;
+  right: 10px;
+  top: 0px;
+  margin-right: 10px;
+  height: 30px;
+  border: none;
+  cursor: pointer;  
+}
+
+.login:hover {
+  background-color: #ff3333;
+}
+
+.logout {
+  position: absolute;
+  background-color: #ff0000;
+  color: white;
+  right: -80px;
+  top: 0px;
+  margin-right: 0px;
+  height: 30px;
+  border: none;
+}  
+
+.logout:hover {
+  background-color: #ff3333;
+}
+
+.home {
+  height: 30px;
+  border: none;  
+}
+
+.mwbutton {
+  position: relative; 
+  background-color: #a0e53c;
+  color: black;
+  top: 0px;
+  margin-left: 5px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.configbutton {
+  position: relative; 
+  background-color: #a0e53c;
+  color: black;
+  top: 0px;
+  margin-left: 5px;
+  height: 30px;
+  border: none;
+  cursor: pointer;	
+}
+
+.binnenbutton {
+  position: relative; 
+  background-color: #a0e53c;
+  color: black;
+  top: 0px;
+  margin-left: 5px;
+  height: 30px;
+  border: none;
+  cursor: pointer;	
+}
+
+.buitenbutton {
+  position: relative; 
+  background-color: #a0e53c;
+  color: black;
+  top: 0px;
+  margin-left: 5px;
+  height: 30px;
+  border: none;
+  cursor: pointer;	
+}
+
+.gebruiker {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  margin-right: 0px;
+  bottom: -16px;
+  right: 80px;
+  color: black;
+  background-color: #a0e53c;
+  border: none;
+  text-align: center;
+}
+
+/************************
+ *content		        *
+ ************************/
+ 
+.center {
+	text-align: center;
+}
+.box {
+	width: 20%;
+	height: 250px;
+	margin: 33px;
+	padding: 0px;
+	float: left;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+}
+
+.nametag {
+	width: 100%;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	position: relative;
+	top: 210px;
+	color: #000000;
+	background-color: #a0e53c;
+	border-collapse: collapse;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+ 
+ /************************
+ *footer	   	         *
+ ************************/
+ 
+ footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  color: white;
+  font-size: 0.5em;
+ }
+ 
+  /************************
+ *formulieren		     *
+ ************************/
+ 
+ #inputbox_01 {
+    width: 40%;
+	height: 325px;
+	margin: 2%;
+	padding: 5px;
+	float: center;
+	background-color: #a0e53c;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+	display: none;
+ }
+ 
+  #inputbox_02 {
+    width: 40%;
+	height: 375px;
+	margin: 2%;
+	padding: 5px;
+	float: center;
+	background-color: #a0e53c;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+	display: none;
+ }
+ 
+  #inputbox_03 {
+    width: 40%;
+	height: 200px;
+	margin: 2%;
+	padding: 5px;
+	float: center;
+	background-color: #a0e53c;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+	display: none;
+ }
+ .inputask {
+    width: 48%;
+	height: 20px;
+	margin-left: 5px;
+	padding: 1px;
+	float: left;
+	background-color: #a0e53c;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+ }
+ 
+ .input {
+    width: 48%;
+	height: 20px;
+	margin-right: 5px;
+	padding: 1px;
+	float: right;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	border: 1px solid #000000;
+ }
+ 
+ .buttonform {
+   width: 100px;
+   height: 50px;
+   background-color: #66a4dd;
+   color: white;
+   margin-left: 25px;
+   margin-top: 10px;
+   border: 1px solid #0066ff
+ }
+ 
+ .buttonform:hover {
+   color: black; 
+ }
+ 
+ #subMenu {
+   display: none;   
+ }
+ 
+ .submenu {
+   position: relative;
+   width: 150px;
+   height: 30px;
+   left: 220px;
+   top: -15px;
+   color: black;
+   background-color: #a0e53c;
+   border: none;
+   border-left: 5px solid green;
+	 
+	 
+ }
